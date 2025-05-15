@@ -11,4 +11,17 @@ sources:
       - name: STUDENTS_JUNE
       - name: NEXT_DEP
       - name: PREV_DEP
+      - name: department
+      - name: customers
+        columns:
+             
+          - name: id
+            tests:
+              - unique
+              - not_null
+          - name: full_name
+            tests:
+              - accepted_values:
+                  values: ['Odilia Seti', 'Rishikesh', 'bala','Lewiss MacDwyer']
 
+ 
